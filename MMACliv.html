@@ -28,6 +28,10 @@
     <P style="background-color:black">3. ENVOYEZ-NOUS LA CAPTURE DANS WATSAPP </P>
     <P></P>
    </div>
+    <div style="text-align:center;">
+    <span class="finger">👆</span>
+    <p>Dézoomez pour voir plus</p>
+    </div>
    <h2 class="disc" style="background-color:black; border:none;position:absolute;bottom:50px; left:190px">NB: FAUT DABORD FAIRE LA CAPTURE AVANT DAPPUYER SUR LA DISCUTION</h2>
    
     
@@ -87,6 +91,15 @@
         border-radius: 100px;
     }
 }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.finger {
+  display: inline-block;
+  animation: bounce 1s infinite;
+  font-size: 24px;
+}
 @media screen and (max-width: 1090px){
     .disc{width: 380px; margin-left: 0px; display: none;}
     .rgl{position: absolute; top: 10px;left: 0px; width: 500px; font-size: 20px;margin-top: -200px;}
@@ -107,6 +120,7 @@
 }
 
 </style>
+
 
 
 
