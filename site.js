@@ -162,7 +162,17 @@ inputs.forEach((input1)=>{
 function ouvrirWhatsApp() {
     
 }
+window.addEventListener('load', () => {
+      const message = new SpeechSynthesisUtterance("Bienvenue sur m m a commercial faites vos achats en toute confiance");
+      message.lang = 'fr-FR'; // Langue française
+      message.rate = 1;       // Vitesse normale
+      message.pitch = 1;      // Ton normal
+
+      // Faire parler la voix
+      window.speechSynthesis.speak(message);
+});
 
     
+
 
 
