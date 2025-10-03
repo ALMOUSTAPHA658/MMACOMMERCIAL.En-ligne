@@ -48,6 +48,17 @@
   });
 }
     </script>
+    <script>
+      window.addEventListener('load', () => {
+      const message = new SpeechSynthesisUtterance("Dezoomer dabord et lisez attentivement le tableau");
+      message.lang = 'fr-FR'; // Langue française
+      message.rate = 1;       // Vitesse normale
+      message.pitch = 1;      // Ton normal
+
+      // Faire parler la voix
+      window.speechSynthesis.speak(message);
+    });
+    </script>
     
 </body>
 </html>
@@ -133,6 +144,7 @@
 }
 
 </style>
+
 
 
 
